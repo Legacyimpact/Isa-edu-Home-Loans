@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - ISA-EDU Home & Loans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #00a680;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #00ffcc;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00ddb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Apply for a Private Loan</h2>
+    <form action="mailto:info@isaeduhomeloans.com" method="post" enctype="text/plain">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="Full Name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="Phone" required>
+
+      <label for="amount">Desired Loan Amount ($):</label>
+      <input type="number" id="amount" name="Loan Amount" required>
+
+      <label for="term">Preferred Term:</label>
+      <select id="term" name="Term">
+        <option value="6">6 months</option>
+        <option value="12">12 months</option>
+        <option value="18">18 months</option>
+      </select>
+
+      <label for="purpose">Purpose of Loan:</label>
+      <textarea id="purpose" name="Purpose" rows="4" placeholder="e.g., Fix & Flip, Bridge Loan, Rehab" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
